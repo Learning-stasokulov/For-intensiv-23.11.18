@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My App</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+function myFirstApp (name, age) {
+
+    alert ("Привет, меня зовут " + name + " и это моя первая программа");
+
+    function showSkills() {
+        let skills = ["HTML", "CSS", "JavaScript"];
+        for (let i = 0; i < skills.length; i++) {
+            document.write("Я владею " + skills[i] + "<br>");
+        }
+    }
+
+    showSkills();
+
+    function checkAge() {
+        if (age < 18) {
+            alert ("Да ты весьма молод!");
+        } else {
+            alert ("Почему не в армии?");
+        }
+    };
+
+    checkAge();
+
+    function calcPow(num) {
+        console.log(num*num);
+    };
+
+    calcPow(5);
+}
+
+myFirstApp ("Стас", 34);
+
+</script>
+</html>
